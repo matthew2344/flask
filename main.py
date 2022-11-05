@@ -1,7 +1,7 @@
-import importlib
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
+import importlib
 from flask import Flask, Response, jsonify, request
 from PIL import Image
 from flask_cors import CORS, cross_origin
