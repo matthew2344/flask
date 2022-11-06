@@ -10,10 +10,10 @@ from .classifier import training
 from binascii import a2b_base64
 from io import StringIO, BytesIO
 import json
-#import cv2
+import cv2
 import numpy as np
-#import facenet
-#import detect_face
+import facenet
+import detect_face
 import os
 import pickle
 import tensorflow.compat.v1 as tf
