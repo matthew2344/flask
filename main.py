@@ -35,4 +35,5 @@ def test():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8080)
+    my_port = 8080
+    app.run(debug=True, port=my_port)
