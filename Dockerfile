@@ -17,6 +17,8 @@ EXPOSE 8080
 
 CMD ["gunicorn", "-b", "0.0.0.0:8080", "main:app"]
 
+EXPOSE 8080
+
 #CMD ["docker build ./"]
 #CMD ["docker docker run -d -p 8080:8080 test"]
 
