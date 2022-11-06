@@ -15,10 +15,10 @@ EXPOSE 8080
 
 #ENTRYPOINT [ "python" ]
 
-CMD ["gunicorn", "-b", "0.0.0.0:8080", "main:app"]
+#CMD ["gunicorn", "-b", "0.0.0.0:8080", "main:app"]
 
-#docker run -it -d -p 8080:8080 my_flask
+docker run -it -d -p 8080:8080 test
+docker exec -it test /bin/bash
+#docker build -t test 
 
-docker build -t test 
-
-docker run -d -p 8080:8080 test
+#docker run -d -p 8080:8080 test
