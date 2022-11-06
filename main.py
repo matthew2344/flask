@@ -13,7 +13,7 @@ import json
 import cv2
 import numpy as np
 #import facenet
-import detect_face
+#import detect_face
 import os
 import pickle
 import tensorflow.compat.v1 as tf
