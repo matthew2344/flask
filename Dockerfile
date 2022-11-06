@@ -13,11 +13,16 @@ RUN pip install -r requirements.txt
 
 EXPOSE 8080
 
+ARG PORT
+ENV PORT=6001
+
+EXPOSE $PORT
+
 #ENTRYPOINT [ "python" ]
 
-CMD ["gunicorn", "-b", "0.0.0.0:8000", "main:app"]
+CMD ["gunicorn", "-b", "0.0.0.0:6001", "main:app"]
 
-EXPOSE 8080
+
 
 #CMD ["docker build ./"]
 #CMD ["docker docker run -d -p 8080:8080 test"]
