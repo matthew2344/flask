@@ -5,15 +5,15 @@ import importlib
 from flask import Flask, Response, jsonify, request
 from PIL import Image
 from flask_cors import CORS, cross_origin
-from preprocess import preprocesses
-from classifier import training
+#from preprocess import preprocesses
+#from classifier import training
 from binascii import a2b_base64
 from io import StringIO, BytesIO
 import json
-import cv2
+#import cv2
 import numpy as np
-import facenet
-import detect_face
+#import facenet
+#import detect_face
 import os
 import pickle
 import tensorflow.compat.v1 as tf
