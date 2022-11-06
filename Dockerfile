@@ -4,7 +4,10 @@ RUN apt-get update
 RUN apt-get install ffmpeg libsm6 libxext6  -y
 
 
-RUN git clone https://github.com/matthew2344/flask.git
+WORKDIR /data
+RUN git clone https://github.com/matthew2344/flask.git /data/app
+WORKDIR /data/app
+
 
 RUN pip install -r requirements.txt
 
