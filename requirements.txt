@@ -8,7 +8,8 @@ scipy==1.8.1
 six==1.16.0
 tensorflow-cpu==2.8.0
 matplotlib
-opencv-python-headless
+opencv-python
+libgl1-mesa-glx
 
 click==7.1.2
 Flask==1.1.2
