@@ -32,7 +32,7 @@ import importlib
 import numpy as np
 import tensorflow.compat.v1 as tf
 #from math import floor
-import cv2
+from cv2 import cv2
 import os
 
 def layer(op):
