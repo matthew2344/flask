@@ -10,7 +10,7 @@ from flask_cors import CORS, cross_origin
 from binascii import a2b_base64
 from io import StringIO, BytesIO
 import json
-import cv2
+#import cv2
 import numpy as np
 #import facenet
 #import detect_face
