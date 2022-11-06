@@ -15,7 +15,7 @@ EXPOSE 8080
 
 #ENTRYPOINT [ "python" ]
 
-CMD ["gunicorn", "-b", "0.0.0.0:8080", "main:app"]
+CMD ["gunicorn", "-b", "0.0.0.0:8000", "main:app"]
 
 EXPOSE 8080
 
