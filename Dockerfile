@@ -14,13 +14,13 @@ RUN pip install -r requirements.txt
 EXPOSE 8080
 
 ARG PORT
-ENV PORT=6001
+ENV PORT=5000
 
 EXPOSE $PORT
 
 #ENTRYPOINT [ "python" ]
 
-CMD ["gunicorn", "-b", "0.0.0.0:6001", "main:app"]
+CMD ["gunicorn", "-b", "0.0.0.0:5000", "main:app"]
 
 
 
