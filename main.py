@@ -36,4 +36,5 @@ def test():
 
 if __name__ == '__main__':
     my_port = 8080
+    print(os.getenv("PORT"))
     app.run(debug=True, port=os.getenv("PORT", default=5000))
